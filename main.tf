@@ -62,4 +62,8 @@ resource "google_compute_firewall" "main" {
         protocol = "tcp"
         ports = ["22"]
     }
+
+    target_tags = [
+        "public"
+    ]
 }
