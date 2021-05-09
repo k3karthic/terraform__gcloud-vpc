@@ -3,6 +3,10 @@ Create a VPC in Google Cloud; it will serve as the default VPC for all deploymen
 
 Terraform script for deploying a server under the [Google Cloud Always Free](https://cloud.google.com/free/) tier can be found at [https://github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance).
 
+## Requirements
+
+Enable the Compute Engine API from [https://console.cloud.google.com/apis/api/compute.googleapis.com/overview?pli=1](https://console.cloud.google.com/apis/api/compute.googleapis.com/overview?pli=1).
+
 ## Input Variables
 
 Create a file to store the input variables using the sample file `google.tfvars.sample`. The file should be called `google.tfvars` or edit `bin/plan.sh` with the appropriate file name.
