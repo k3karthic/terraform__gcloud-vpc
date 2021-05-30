@@ -67,3 +67,17 @@ resource "google_compute_firewall" "main" {
     "public"
   ]
 }
+
+resource "google_compute_firewall" "shadowsocks" {
+  name    = "personal-network--firewall-shadowsocks"
+  network = google_compute_network.main.id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["8388"]
+  }
+
+  target_tags = [
+    "shadowsocks"
+  ]
+}
