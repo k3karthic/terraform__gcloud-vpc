@@ -16,50 +16,39 @@ Create a file to store the input variables using the sample file `google.tfvars.
 
 ## Deployment
 
-### Step 1
-
-Create a Terraform plan by running plan.sh; the script will read input variables from the file google.tfvars
-
+**Step 1:** Use the following command to create a [Terraform plan](https://www.terraform.io/docs/cli/run/index.html#planning),
 ```
-./bin/plan.sh
+$ ./bin/plan.sh
 ```
 
-To avoid fetching the latest state of resources, run the following command.
-
+To avoid fetching the latest state of resources, use the following command,
 ```
-./bin/plan.sh --refresh=false
-```
-
-### Step 2
-
-Review the generated plan
-
-```
-./bin/view.sh
+$ ./bin/plan.sh -refresh=false
 ```
 
-### Step 3
-
-Run the verified plan
-
+**Step 2:** Review the plan using the following command,
 ```
-./bin/apply.sh
+$ ./bin/view.sh
+```
+
+**Step 3:** [Apply](https://www.terraform.io/docs/cli/run/index.html#applying) the plan using the following command,
+```
+$ ./bin/apply.sh
 ```
 
 ## Encryption
 
-Sensitive files like the input variables (google.tfvars) and Terraform state files are encrypted before being stored in the repository. 
-
-You must add the unencrypted file paths to `.gitignore`.
+Encrypt sensitive files (SSH private keys) before saving them. `.gitignore` must contain the unencrypted file paths.
 
 Use the following command to decrypt the files after cloning the repository,
 
 ```
-./bin/decrypt.sh
+$ ./bin/decrypt.sh
 ```
 
 Use the following command after running terraform to update the encrypted files,
 
 ```
-./bin/encrypt.sh <gpg key id>
+$ ./bin/encrypt.sh <gpg key id>
 ```
+
