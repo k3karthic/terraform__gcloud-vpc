@@ -3,8 +3,8 @@ Create a VPC in Google Cloud.
 
 The Terraform script below deploys a server under the [Google Cloud Always Free](https://cloud.google.com/free/) tier,
 * terraform__gcloud-instance
-	* GitHub: [github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance).
-	* Codeberg: [codeberg.org/k3karthic/terraform__gcloud-instance](https://codeberg.org/k3karthic/terraform__gcloud-instance).
+	* GitHub: [github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance)
+	* Codeberg: [codeberg.org/k3karthic/terraform__gcloud-instance](https://codeberg.org/k3karthic/terraform__gcloud-instance)
 
 ## Requirements
 
