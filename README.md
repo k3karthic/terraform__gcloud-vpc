@@ -19,7 +19,7 @@ Enable the Compute Engine API from [https://console.cloud.google.com/apis/api/co
 
 Create a file to store the [Terraform input variables](https://www.terraform.io/docs/language/values/variables.html). Use `google.tfvars.sample` as a reference. Keep `google.tfvars` as the filename or change the name in the following files,
 
-1. `bin/plan.sh`
+* `bin/plan.sh`
 
 ## Deployment
 
