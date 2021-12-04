@@ -1,7 +1,10 @@
-# Terraform - Create a VPC in Google Cloud
-Create a VPC in Google Cloud; it will serve as the default VPC for all deployments.
+# Terraform — Create a VPC in Google Cloud
+Create a VPC in Google Cloud.
 
-Terraform script for deploying a server under the [Google Cloud Always Free](https://cloud.google.com/free/) tier can be found at [https://github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance).
+The Terraform script below deploys a server under the [Google Cloud Always Free](https://cloud.google.com/free/) tier,
+* terraform__gcloud-instance
+	* GitHub: [github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance).
+	* Codeberg: [codeberg.org/k3karthic/terraform__gcloud-instance](https://codeberg.org/k3karthic/terraform__gcloud-instance).
 
 ## Requirements
 
