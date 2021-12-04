@@ -6,13 +6,20 @@ The Terraform script below deploys a server under the [Google Cloud Always Free]
 	* GitHub: [github.com/k3karthic/terraform__gcloud-instance](https://github.com/k3karthic/terraform__gcloud-instance)
 	* Codeberg: [codeberg.org/k3karthic/terraform__gcloud-instance](https://codeberg.org/k3karthic/terraform__gcloud-instance)
 
+## Code Mirrors
+
+* GitHub: [github.com/k3karthic/terraform__gcloud-vpc](https://github.com/k3karthic/terraform__gcloud-vpc/)
+* Codeberg: [codeberg.org/k3karthic/terraform__gcloud-vpc](https://codeberg.org/k3karthic/terraform__gcloud-vpc)
+
 ## Requirements
 
 Enable the Compute Engine API from [https://console.cloud.google.com/apis/api/compute.googleapis.com/overview?pli=1](https://console.cloud.google.com/apis/api/compute.googleapis.com/overview?pli=1).
 
-## Input Variables
+## Configuration
 
-Create a file to store the input variables using the sample file `google.tfvars.sample`. The file should be called `google.tfvars` or edit `bin/plan.sh` with the appropriate file name.
+Create a file to store the [Terraform input variables](https://www.terraform.io/docs/language/values/variables.html). Use `google.tfvars.sample` as a reference. Keep `google.tfvars` as the filename or change the name in the following files,
+
+1. `bin/plan.sh`
 
 ## Deployment
 
