@@ -22,6 +22,12 @@ Create a file to store the [Terraform input variables](https://www.terraform.io/
 1. `.gitignore`
 1. `bin/plan.sh`
 
+## Authentication
+
+[Google provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs) documentation is at [registry.terraform.io/providers/hashicorp/google/latest/docs](https://registry.terraform.io/providers/hashicorp/google/latest/docs).
+
+[Google Cloud Shell](https://cloud.google.com/shell/) can deploy this script without configuration.
+
 ## Deployment
 
 **Step 1:** Use the following command to create a [Terraform plan](https://www.terraform.io/docs/cli/run/index.html#planning),
