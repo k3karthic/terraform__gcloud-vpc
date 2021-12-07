@@ -17,10 +17,14 @@ Enable the Compute Engine API from [https://console.cloud.google.com/apis/api/co
 
 ## Configuration
 
-Create a file to store the [Terraform input variables](https://www.terraform.io/docs/language/values/variables.html). Use `google.tfvars.sample` as a reference. Keep `google.tfvars` as the filename or change the name in the following files,
-
-1. `.gitignore`
-1. `bin/plan.sh`
+1. Create a file to store the [Terraform input variables](https://www.terraform.io/docs/language/values/variables.html). Use `google.tfvars.sample` as a reference. Keep `google.tfvars` as the filename or change the name in the following files,
+    1. `.gitignore`
+    1. `bin/plan.sh`
+1. Set the `region` input variable. The following regions are available in the free tier ([cloud.google.com/free/docs/gcp-free-tier/#compute](https://cloud.google.com/free/docs/gcp-free-tier/#compute)),
+    1. *Oregon:* us-west1
+    2. *Iowa:* us-central1
+    3. *South Carolina:* us-east1
+4. Keep `us-central1` as the region or change the variable name `uscentral1_cidr` to match the new region. 
 
 ## Authentication
 
@@ -49,6 +53,13 @@ $ ./bin/view.sh
 ```
 $ ./bin/apply.sh
 ```
+
+**Step 4:** Display the created subnetwork using the following command,
+```
+$ terraform state show google_compute_subnetwork.uscentral1
+```
+
+![terraform show screenshot](resources/terraform_show.png)
 
 ## Encryption
 
